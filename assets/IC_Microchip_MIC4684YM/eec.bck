@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MIC4684YM
+D MIC4684YM
+F http://ww1.microchip.com/downloads/en/DeviceDoc/MIC4684.pdf
+$ENDCMP
+# end doc library

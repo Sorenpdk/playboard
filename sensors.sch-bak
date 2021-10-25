@@ -21,6 +21,7 @@ F 0 "U4" H 3300 2850 50  0000 L CNN
 F 1 "LSM6DS3" H 3200 1800 50  0000 L CNN
 F 2 "Package_LGA:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y" H 2500 1600 50  0001 L CNN
 F 3 "www.st.com/resource/en/datasheet/lsm6ds3.pdf" H 3000 1650 50  0001 C CNN
+F 4 "C967633" H 2900 2300 50  0001 C CNN "Field4"
 	1    2900 2300
 	1    0    0    -1  
 $EndComp
@@ -420,20 +421,6 @@ Wire Notes Line
 Text Notes 800  3700 0    50   ~ 0
 MEMS TEMP / HUMIDITY\n\n\n
 $Comp
-L HTS221:HTS221 U5
-U 1 1 616EB7A3
-P 2450 4750
-F 0 "U5" H 2900 5100 50  0000 C CNN
-F 1 "HTS221" H 2900 4400 50  0000 C CNN
-F 2 "HTS221:XDCR_HTS221" H 2450 4750 50  0001 L BNN
-F 3 "" H 2450 4750 50  0001 L BNN
-F 4 "STMicroelectronics" H 2450 4750 50  0001 L BNN "MANUFACTURER"
-F 5 "Rev 1" H 2450 4750 50  0001 L BNN "PARTREV"
-F 6 "Manufacturer Recommendations" H 2450 4750 50  0001 L BNN "STANDARD"
-	1    2450 4750
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR060
 U 1 1 616ECBA9
 P 3150 5000
@@ -549,4 +536,15 @@ Wire Notes Line
 	800  6100 3950 6100
 Wire Notes Line
 	3950 3550 800  3550
+$Comp
+L Sensor_Humidity:SHT30-DIS U5
+U 1 1 6176112E
+P 2500 4700
+F 0 "U5" H 2500 5181 50  0000 C CNN
+F 1 "SHT30-DIS" H 2500 5090 50  0000 C CNN
+F 2 "Sensor_Humidity:Sensirion_DFN-8-1EP_2.5x2.5mm_P0.5mm_EP1.1x1.7mm" H 2500 4750 50  0001 C CNN
+F 3 "https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/2_Humidity_Sensors/Datasheets/Sensirion_Humidity_Sensors_SHT3x_Datasheet_digital.pdf" H 2500 4750 50  0001 C CNN
+	1    2500 4700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -506,4 +506,45 @@ Wire Notes Line
 	3800 800  7500 800 
 Wire Notes Line
 	3800 2350 7500 2350
+Wire Wire Line
+	4100 3550 4200 3550
+$Comp
+L power:GND #PWR024
+U 1 1 61811988
+P 4200 3800
+F 0 "#PWR024" H 4200 3550 50  0001 C CNN
+F 1 "GND" H 4350 3750 50  0000 C CNN
+F 2 "" H 4200 3800 50  0001 C CNN
+F 3 "" H 4200 3800 50  0001 C CNN
+	1    4200 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3650 4100 3650
+$Comp
+L power:VCC #PWR021
+U 1 1 618127F9
+P 4200 3400
+F 0 "#PWR021" H 4200 3250 50  0001 C CNN
+F 1 "VCC" H 4215 3573 50  0000 C CNN
+F 2 "" H 4200 3400 50  0001 C CNN
+F 3 "" H 4200 3400 50  0001 C CNN
+	1    4200 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J9
+U 1 1 6181E3FA
+P 3900 3650
+F 0 "J9" H 3818 3325 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 3818 3416 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal" H 3900 3650 50  0001 C CNN
+F 3 "~" H 3900 3650 50  0001 C CNN
+	1    3900 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4200 3650 4200 3800
+Wire Wire Line
+	4200 3400 4200 3550
 $EndSCHEMATC
